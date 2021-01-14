@@ -21,4 +21,4 @@ jobs:
       working-directory: ${{github.workspace}}/cmake-example
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run: (cmake .;cmake --build .;./CPTS_223_CMake_Example)
+      run: (mkdir build;cmake -B build -S .;cmake --build build;./build/CPTS_223_CMake_Example)
