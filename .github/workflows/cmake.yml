@@ -1,4 +1,4 @@
-name: CMake
+name: CMake compilation
 
 on: [push]
 
@@ -16,12 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
     - name: Build CMake example
       # Choose the working directory
       working-directory: ${{github.workspace}}/cmake-example
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run: cmake .
-      run: cmake --build .
-      run: ./CPTS_223_CMake_Example
+      run: (cmake .;cmake --build .;./CPTS_223_CMake_Example)
