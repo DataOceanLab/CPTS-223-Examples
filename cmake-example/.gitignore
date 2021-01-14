@@ -1,2 +1,9 @@
 /.idea/
 /cmake-build-debug/
+/CMakeFiles/
+/Testing/
+/CMakeCache.txt
+/CPTS_223_CMake_Example
+/CPTS_223_CMake_Example.cbp
+/Makefile
+/cmake_install.cmake
