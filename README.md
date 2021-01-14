@@ -16,4 +16,6 @@ If anything strange happens during the compilation, you can simply delete the `b
 
 ## Use GitHub Action to auto-compile your build
 
-Open this file in this folder: `github/workflows/cmake.yml` and follow the example to write your own GitHub action
+1. Open this file in this folder: `github/workflows/cmake.yml` and follow the example to write your own GitHub action
+2. Click the "Action" tag on this GitHub page and see the result of your GitHub action
+3. You can update the badge in this README file to show your Action status
