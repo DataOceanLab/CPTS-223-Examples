@@ -2,7 +2,7 @@
 
 ![CMake compilation](https://github.com/DataOceanLab/CPTS-223-Examples/workflows/CMake%20compilation/badge.svg)
 
-## Compile
+## Compile in a terminal
 
 All commands are supposed to be run in a Ubuntu terminal
 
@@ -12,7 +12,11 @@ All commands are supposed to be run in a Ubuntu terminal
 4. Ask cmake to build the project: `cmake --build build`  After this, you will see the executable program in the `build` folder
 5. Run the executable program. For example, `./build/CPTS_223_CMake_Example`
 
-If anything strange happens during the compilation, you can simply delete the `build` folder and see whether the problem is gone: `rm build`
+If anything strange happens during the compilation, you can simply delete the `build` folder and see whether the problem is gone: `rm -r build`
+
+## Compile in an IDE
+
+Use an IDE such as CLion to open the example directory (the one contains the CMakeLists.txt) and run it in the IDE
 
 ## Use GitHub Action to auto-compile your build
 
