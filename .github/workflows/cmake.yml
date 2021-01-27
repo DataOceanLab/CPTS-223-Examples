@@ -21,4 +21,4 @@ jobs:
       working-directory: ${{github.workspace}}/cmake-example
       shell: bash
       # Execute the build. 1. Create a build directory. 2. Config cmake. 3. Build the project using cmake
-      run: (mkdir build;cmake -B build -S .;cmake --build build;./build/CPTS_223_CMake_Example)
+      run: (mkdir build;cmake -B build -S .;cmake --build build)
