@@ -1,24 +1,19 @@
-name: CMake compilation
+name: CMake compilation # NO NEED TO CHANGE HERE
 
-on: [push]
+on: [push] # NO NEED TO CHANGE HERE
 
 env:
-  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
-  BUILD_TYPE: Release
+  BUILD_TYPE: Release # NO NEED TO CHANGE HERE
 
 jobs:
   build:
-    # The CMake configure and build commands are platform agnostic and should work equally
-    # well on Windows or Mac.  You can convert this to a matrix build if you need
-    # cross-platform coverage.
-    # See: https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-20.04 # NO NEED TO CHANGE HERE
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build CMake example
+    - uses: actions/checkout@v2 # NO NEED TO CHANGE HERE
+    - name: Build CMake example # NO NEED TO CHANGE HERE
       # Choose the working directory
-      working-directory: ${{github.workspace}}/cmake-example
+      working-directory: ${{github.workspace}}/cmake-example # YOU NEED TO CHANGE THE FOLDER NAME TO YOUR OWN FOLDER NAME
       shell: bash
-      # Execute the build. 1. Create a build directory. 2. Config cmake. 3. Build the project using cmake
+      # NO NEED TO CHANGE HERE. This step will execute the build. 1. Create a build directory. 2. Config cmake. 3. Build the project using cmake
       run: (mkdir build;cmake -B build -S .;cmake --build build)
